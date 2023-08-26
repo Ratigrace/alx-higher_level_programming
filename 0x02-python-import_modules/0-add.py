@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-a = 1
-b = 2
+if __name__ == "__main__":
+    """Print the sum of 1 and 2."""
+    from add_0 import add
 
-imported_module = __import__('add_0', globals(), locals(), ['add'], 0)
-add_result = imported_module.add(a, b)
-
-print(f"{a} + {b} = {add_result}")
+    a = 1
+    b = 2
+    print("{} + {} = {}".format(a, b, add(a, b)))
